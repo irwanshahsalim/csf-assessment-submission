@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>-----My Bookstore-----</h1>
+    <div class="row" *ngFor="let row of buttonRows">
+      <button mat-raised-button *ngFor="let button of row" (click)="onButtonClick(button)">
+        {{ button }}
+      </button>
+    </div>
+  </div>
+  

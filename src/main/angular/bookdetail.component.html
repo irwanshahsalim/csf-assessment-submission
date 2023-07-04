@@ -1,0 +1,11 @@
+<div class="container">
+    <img [src]="book.cover" alt="{{ book.title }}">
+    <h1>{{ book.title }}</h1>
+    <p>Pages: {{ book.pages }}</p>
+    <p>Author: {{ book.authors.join(', ') }}</p>
+    <p>Rating: {{ book.rating }} ({{ book.ratingCount }})</p>
+    <p>Genres: {{ book.genres.join(', ') }}</p>
+    <button mat-raised-button (click)="onFindReview()">Find Review</button>
+    <button mat-raised-button (click)="onBack()">Back</button>
+  </div>
+  

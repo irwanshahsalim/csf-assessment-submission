@@ -1,0 +1,10 @@
+<div class="container" *ngFor="let review of reviews">
+    <h1>{{ review.book_title }}</h1>
+    <p>by {{ review.book_author }}</p>
+    <p>Reviewer: {{ review.reviewer }}</p>
+    <p>Date: {{ review.review_date }}</p>
+    <p>{{ review.summary }}</p>
+    <a href="{{ review.url }}" target="_blank">Full Review</a>
+  </div>
+  <button mat-raised-button (click)="onBack()">Back</button>
+  
